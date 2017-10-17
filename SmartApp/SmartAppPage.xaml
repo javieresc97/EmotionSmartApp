@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:SmartApp" 
+    x:Class="SmartApp.SmartAppPage">
+    <StackLayout Margin="0,16">
+	    <Button Text="Escoger imagen" Clicked="Handle_Clicked"/>
+        <Image x:Name="OutputImage"
+               HeightRequest="300"
+               HorizontalOptions="FillAndExpand"
+               Aspect="AspectFill"/>
+        <Label x:Name="EmotionResultMessage" 
+               Text="Selecciona una imagen para analizar"
+               HorizontalTextAlignment="Center"/>
+    </StackLayout>
+</ContentPage>
